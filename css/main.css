@@ -1,36 +1,72 @@
 label {
     display: block;
     text-transform: uppercase;
+    text-align: end;
 }
 
-.wrapper {
+.game {
+    width: 550px;
+}
+
+.wrapper-main {
     display: flex;
+    min-width: 1300px;
+}
+
+.game-wrapper {
     flex-direction: column;
-    justify-content: center;
-    width: 70%;
-    margin: auto;
+    justify-content: end;
+    width: 35%;
+    min-width: 500px;
+    margin-left: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding-right: 100px;;
+}
+
+.map-wrapper {
+    width: 65%;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+.test-flag {
+    position: absolute;
+    top: 190px;
+    right: 239px;
+}
+
+#svg-map {
+    height: auto;
+    width: 100%;
 }
 
 #game-input {
-    border-bottom: 2px solid #c1c1c1;
+    border-bottom: 2px solid #989898;
     border-top: none;
     border-right: none;
     border-left: none;
     padding: 10px;
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 100px;
-    width: 500px;
+    width: 450px;
 }
 
 #history-input {
     border: none;
     padding: 10px;
-    width: 200px;
+    width: 150px;
+    text-align: right;
+}
+
+.info-block {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
 }
 
 .history {
-    margin-top: 100px;
-    display: flex;
+    width: 160px;
+    padding-right: 10px;
 }
 
 * {
@@ -49,7 +85,6 @@ p {
 }
 
 button {
-    border: none;
     height: 50px;
     width: 50px;
     padding: 0;
@@ -66,5 +101,5 @@ button:hover {
 }
 
 .wiki-text {
-    max-width: 300px;
+    width: 320px;
 }

@@ -19,7 +19,6 @@ function loadCityInfo(cityName) {
         }
     };
     xhr.send(null);
-
 }
 
 function game() {
